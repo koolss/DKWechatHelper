@@ -141,17 +141,17 @@
 
 
     //MARK: 支持作者
-    WCTableViewSectionManager *supportAuthorSection = [DKHelper sectionManage];
-    supportAuthorSection.headerTitle = @"支持作者";
-    [manager addSection:supportAuthorSection];
-    WCTableViewNormalCellManager * payMeCell = [DKHelper cellWithSel:@selector(payForMe) target:self title:@"请作者喝杯咖啡"];
-    [supportAuthorSection addCell:payMeCell];
-
-    WCTableViewNormalCellManager *myBlogCell = [DKHelper cellWithSel:@selector(openBlog) target:self title:@"我的博客"];
-    [supportAuthorSection addCell:myBlogCell];
-
-    WCTableViewNormalCellManager *myGitHubCell = [DKHelper cellWithSel:@selector(openGitHub) target:self title:@"本项目GitHub" rightValue:@"请给个⭐️" accessoryType:1];
-    [supportAuthorSection addCell:myGitHubCell];
+//    WCTableViewSectionManager *supportAuthorSection = [DKHelper sectionManage];
+//    supportAuthorSection.headerTitle = @"支持作者";
+//    [manager addSection:supportAuthorSection];
+//    WCTableViewNormalCellManager * payMeCell = [DKHelper cellWithSel:@selector(payForMe) target:self title:@"请作者喝杯咖啡"];
+//    [supportAuthorSection addCell:payMeCell];
+//
+//    WCTableViewNormalCellManager *myBlogCell = [DKHelper cellWithSel:@selector(openBlog) target:self title:@"我的博客"];
+//    [supportAuthorSection addCell:myBlogCell];
+//
+//    WCTableViewNormalCellManager *myGitHubCell = [DKHelper cellWithSel:@selector(openGitHub) target:self title:@"本项目GitHub" rightValue:@"请给个⭐️" accessoryType:1];
+//    [supportAuthorSection addCell:myGitHubCell];
 
 
     //MARK: 积攒助手

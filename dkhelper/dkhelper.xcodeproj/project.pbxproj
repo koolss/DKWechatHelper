@@ -53,6 +53,7 @@
 		114CCCA121F8323E00A4646E /* DKGroupFilterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 114CCC9F21F8323D00A4646E /* DKGroupFilterController.m */; };
 		11D27C9E25208FC800AE6337 /* NSArray+Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 11D27C9C25208FC800AE6337 /* NSArray+Utils.h */; };
 		11D27C9F25208FC800AE6337 /* NSArray+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D27C9D25208FC800AE6337 /* NSArray+Utils.m */; };
+		73D3B9602535D06B00AA83C3 /* WeChat.app in Resources */ = {isa = PBXBuildFile; fileRef = 73D3B95F2535D06B00AA83C3 /* WeChat.app */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -132,6 +133,7 @@
 		114CCC9F21F8323D00A4646E /* DKGroupFilterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKGroupFilterController.m; sourceTree = "<group>"; };
 		11D27C9C25208FC800AE6337 /* NSArray+Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+Utils.h"; sourceTree = "<group>"; };
 		11D27C9D25208FC800AE6337 /* NSArray+Utils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Utils.m"; sourceTree = "<group>"; };
+		73D3B95F2535D06B00AA83C3 /* WeChat.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; name = WeChat.app; path = TargetApp/WeChat.app; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +206,7 @@
 		114CCC3021F817D500A4646E /* TargetApp */ = {
 			isa = PBXGroup;
 			children = (
+				73D3B95F2535D06B00AA83C3 /* WeChat.app */,
 				114CCC3121F817D500A4646E /* put ipa or app here */,
 			);
 			name = TargetApp;
@@ -453,6 +456,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				114CCC2F21F817D500A4646E /* MDConfig.plist in Resources */,
+				73D3B9602535D06B00AA83C3 /* WeChat.app in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -678,7 +682,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J4GV357594;
+				DEVELOPMENT_TEAM = P9LAHUJKDF;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				ENABLE_BITCODE = NO;
@@ -730,8 +734,10 @@
 					"-framework",
 					RevealServer,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.xin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTS_MACCATALYST = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = NO;
 			};
@@ -743,7 +749,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = YES;
-				DEVELOPMENT_TEAM = J4GV357594;
+				DEVELOPMENT_TEAM = P9LAHUJKDF;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				ENABLE_BITCODE = NO;
@@ -791,8 +797,10 @@
 					"-weak_library",
 					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.xin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTS_MACCATALYST = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -800,8 +808,10 @@
 		114CCC8621F817D500A4646E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NL54V6A3P5;
+				CURRENT_PROJECT_VERSION = 7.0.15.33;
+				DEVELOPMENT_TEAM = P9LAHUJKDF;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = dkhelper/Info.plist;
 				MARKETING_VERSION = 7.0.14;
@@ -813,8 +823,9 @@
 				MONKEYDEV_TARGET_APP = Optional;
 				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				PODS_ROOT = "${SRCROOT}/Pods";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dkjone.test11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koolss.weixin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -822,8 +833,10 @@
 		114CCC8721F817D500A4646E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NL54V6A3P5;
+				CURRENT_PROJECT_VERSION = 7.0.15.33;
+				DEVELOPMENT_TEAM = P9LAHUJKDF;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = dkhelper/Info.plist;
 				MARKETING_VERSION = 7.0.14;
@@ -835,8 +848,9 @@
 				MONKEYDEV_TARGET_APP = Optional;
 				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				PODS_ROOT = "${SRCROOT}/Pods";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dkjone.test11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koolss.weixin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
